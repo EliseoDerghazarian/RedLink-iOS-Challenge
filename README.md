@@ -1,2 +1,2 @@
-# RedLink-iOS-Chanllenge
+# RedLink-iOS-Challenge
 iOS Technical Test for Red Link S.A.
