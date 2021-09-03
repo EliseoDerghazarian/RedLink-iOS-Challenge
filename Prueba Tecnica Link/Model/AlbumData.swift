@@ -14,3 +14,6 @@ struct Album: Codable {
     let title: String!
     
 }
+
+
+

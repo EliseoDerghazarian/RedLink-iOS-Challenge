@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		09C3AB8026DD576D006AA405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3AB7F26DD576D006AA405 /* AppDelegate.swift */; };
 		09C3AB8226DD576D006AA405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3AB8126DD576D006AA405 /* SceneDelegate.swift */; };
-		09C3AB8426DD576D006AA405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3AB8326DD576D006AA405 /* ViewController.swift */; };
+		09C3AB8426DD576D006AA405 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3AB8326DD576D006AA405 /* AlbumViewController.swift */; };
 		09C3AB8726DD576D006AA405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C3AB8526DD576D006AA405 /* Main.storyboard */; };
 		09C3AB8926DD576E006AA405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C3AB8826DD576E006AA405 /* Assets.xcassets */; };
 		09C3AB8C26DD576E006AA405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C3AB8A26DD576E006AA405 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,18 @@
 		09C3AB9D26DDC611006AA405 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3AB9C26DDC611006AA405 /* Constants.swift */; };
 		09EDA1DD26DE9EB6004296AB /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDA1DB26DE9EB6004296AB /* AlbumCell.swift */; };
 		09EDA1DE26DE9EB6004296AB /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EDA1DC26DE9EB6004296AB /* AlbumCell.xib */; };
+		09FDDE9526E14A5F002CC754 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDDE9426E14A5F002CC754 /* PhotoManager.swift */; };
+		09FDDE9826E14AB3002CC754 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDDE9726E14AB3002CC754 /* PhotoData.swift */; };
+		09FDDE9C26E1A649002CC754 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDDE9B26E1A649002CC754 /* PhotoViewController.swift */; };
+		09FDDE9F26E1A7D9002CC754 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDDE9D26E1A7D9002CC754 /* PhotoCell.swift */; };
+		09FDDEA026E1A7D9002CC754 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09FDDE9E26E1A7D9002CC754 /* PhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09C3AB7C26DD576D006AA405 /* Prueba Tecnica Link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba Tecnica Link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C3AB7F26DD576D006AA405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C3AB8126DD576D006AA405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09C3AB8326DD576D006AA405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09C3AB8326DD576D006AA405 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		09C3AB8626DD576D006AA405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09C3AB8826DD576E006AA405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C3AB8B26DD576E006AA405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +39,11 @@
 		09C3AB9C26DDC611006AA405 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09EDA1DB26DE9EB6004296AB /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		09EDA1DC26DE9EB6004296AB /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		09FDDE9426E14A5F002CC754 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		09FDDE9726E14AB3002CC754 /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		09FDDE9B26E1A649002CC754 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		09FDDE9D26E1A7D9002CC754 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		09FDDE9E26E1A7D9002CC754 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +92,8 @@
 		09C3AB9726DDBDCE006AA405 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				09C3AB8326DD576D006AA405 /* ViewController.swift */,
+				09C3AB8326DD576D006AA405 /* AlbumViewController.swift */,
+				09FDDE9B26E1A649002CC754 /* PhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,6 +103,8 @@
 			children = (
 				09C3AB9326DD5E1D006AA405 /* AlbumData.swift */,
 				09C3AB9A26DDC043006AA405 /* AlbumManager.swift */,
+				09FDDE9726E14AB3002CC754 /* PhotoData.swift */,
+				09FDDE9426E14A5F002CC754 /* PhotoManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +115,8 @@
 				09C3AB8526DD576D006AA405 /* Main.storyboard */,
 				09EDA1DB26DE9EB6004296AB /* AlbumCell.swift */,
 				09EDA1DC26DE9EB6004296AB /* AlbumCell.xib */,
+				09FDDE9D26E1A7D9002CC754 /* PhotoCell.swift */,
+				09FDDE9E26E1A7D9002CC754 /* PhotoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +182,7 @@
 				09C3AB8926DD576E006AA405 /* Assets.xcassets in Resources */,
 				09C3AB8726DD576D006AA405 /* Main.storyboard in Resources */,
 				09EDA1DE26DE9EB6004296AB /* AlbumCell.xib in Resources */,
+				09FDDEA026E1A7D9002CC754 /* PhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,12 +194,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C3AB9B26DDC043006AA405 /* AlbumManager.swift in Sources */,
-				09C3AB8426DD576D006AA405 /* ViewController.swift in Sources */,
+				09C3AB8426DD576D006AA405 /* AlbumViewController.swift in Sources */,
+				09FDDE9826E14AB3002CC754 /* PhotoData.swift in Sources */,
+				09FDDE9526E14A5F002CC754 /* PhotoManager.swift in Sources */,
 				09C3AB8026DD576D006AA405 /* AppDelegate.swift in Sources */,
 				09EDA1DD26DE9EB6004296AB /* AlbumCell.swift in Sources */,
 				09C3AB8226DD576D006AA405 /* SceneDelegate.swift in Sources */,
 				09C3AB9426DD5E1D006AA405 /* AlbumData.swift in Sources */,
 				09C3AB9D26DDC611006AA405 /* Constants.swift in Sources */,
+				09FDDE9F26E1A7D9002CC754 /* PhotoCell.swift in Sources */,
+				09FDDE9C26E1A649002CC754 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6XG6444G6;
 				INFOPLIST_FILE = "Prueba Tecnica Link/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6XG6444G6;
 				INFOPLIST_FILE = "Prueba Tecnica Link/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
