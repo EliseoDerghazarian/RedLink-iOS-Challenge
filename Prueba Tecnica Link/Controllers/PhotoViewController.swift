@@ -14,13 +14,14 @@ class PhotoViewController: UIViewController, UITableViewDelegate {
     
     var photoManager = PhotoManager()
     var photos = [Photo]()
-    var albumsPictures: Photo?
+    var albumsId: Int?
+    var photosFiltered = [Photo]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        print("ELI", albumsId!)
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -37,13 +38,7 @@ class PhotoViewController: UIViewController, UITableViewDelegate {
             }
         }
     }
-    
-    
-    
-    
-    
 
-    
 
 }
 
@@ -51,15 +46,18 @@ class PhotoViewController: UIViewController, UITableViewDelegate {
 extension PhotoViewController: UITableViewDataSource {
     
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return photos.count
+    
+    photosFiltered = photos.filter ({
+        return $0.albumId == albumsId })
+        return photosFiltered.count
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: K.photoCellIdentifier, for: indexPath) as! PhotoCell
     
-    cell.photoIdLabel?.text = String(photos[indexPath.row].id)
-    cell.photoTitleLabel?.text = String(photos[indexPath.row].title)
-    //cell.photoImage?.image = photos[indexPath.row].thumbnailUrl
+    cell.photoIdLabel?.text = String(photosFiltered[indexPath.row].id)
+    cell.photoTitleLabel?.text = String(photosFiltered[indexPath.row].title)
+    cell.photoImage?.downloaded(from: photosFiltered[indexPath.row].thumbnailUrl)
     return cell
 }
 }

@@ -7,13 +7,12 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
+class AlbumViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     var albumManager = AlbumManager()
-    var photoData = [Photo]()
     var albums = [Album]()
     var filteredAlbums: [Album]!
     
@@ -35,6 +34,7 @@ class AlbumViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         
         searchBar.delegate = self
         tableView.dataSource = self
+        
         
         
         filteredAlbums = albums
@@ -77,16 +77,14 @@ class AlbumViewController: UIViewController, UISearchBarDelegate, UITableViewDat
     
     }
     
-    
-    func tableView(_ tableView: UITableView, didSelecTRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showPhotos", sender: self)
-        
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? PhotoViewController {
-            destination.albumsPictures = photoData[(tableView.indexPathForSelectedRow?.row)!]
+            destination.albumsId = albums[(tableView.indexPathForSelectedRow?.row)!].id
         }
     }
     

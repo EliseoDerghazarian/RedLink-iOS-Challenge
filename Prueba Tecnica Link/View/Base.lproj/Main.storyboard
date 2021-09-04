@@ -19,6 +19,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FY2-vZ-EfG">
                                 <rect key="frame" x="0.0" y="132" width="414" height="764"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="244-JK-UH8"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" id="504-Mw-g52">
                                 <rect key="frame" x="0.0" y="88" width="414" height="44"/>
@@ -65,7 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pUG-Fw-FS9"/>
                     <connections>
-                        <outlet property="photoTableView" destination="JGq-9A-XhE" id="Zbu-kf-uYe"/>
+                        <outlet property="tableView" destination="JGq-9A-XhE" id="W7u-68-YVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvV-SV-lrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
