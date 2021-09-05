@@ -58,6 +58,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     cell.photoIdLabel?.text = String(photosFiltered[indexPath.row].id)
     cell.photoTitleLabel?.text = String(photosFiltered[indexPath.row].title)
     cell.photoImage?.downloaded(from: photosFiltered[indexPath.row].thumbnailUrl)
+    
     return cell
 }
 }
